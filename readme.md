@@ -24,3 +24,10 @@ docker-compose run --rm app django-admin startproject core .
 Start the application:
 docker-compose up
 This setup covers everything you need to run a Django app in a Docker container for development or basic deployments. Let me know if you have any other questions!
+
+again:
+docker-compose build
+docker-compose run --rm app django-admin startproject core .
+- add database configurations to the django app.
+docker-compose up
+docker exec -it <container_name> /bin/bash ==> to run a command in a container
