@@ -31,3 +31,11 @@ docker-compose run --rm app django-admin startproject core .
 - add database configurations to the django app.
 docker-compose up
 docker exec -it <container_name> /bin/bash ==> to run a command in a container(migrations)
+
+once again(this order is for the times you don't have core and starting form dockerfile, compose and requirements)
+docker-compose build
+docker-compose run --rm app django-admin startproject core .
+- add database configurations to the django app.
+docker-compose up
+docker exec -it django-container /bin/bash ===> (this command you should run in powershell)
+inside the container run the migrations, create another app, copy redis and celery configurations
