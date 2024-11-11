@@ -30,4 +30,4 @@ docker-compose build
 docker-compose run --rm app django-admin startproject core .
 - add database configurations to the django app.
 docker-compose up
-docker exec -it <container_name> /bin/bash ==> to run a command in a container
+docker exec -it <container_name> /bin/bash ==> to run a command in a container(migrations)
